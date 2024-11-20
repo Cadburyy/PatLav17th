@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrisha Laviney 17th</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- lightbox2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="overflow-hidden">
+  <!-- Music -->
+  <audio class="audio" src="assets/audio/pttb.mp3" autoplay type="audio" loop></audio>
+  <!-- Sfx Door -->
+  <audio id="doorSound" src="assets/audio/door.mp3"></audio>
+
+  <!-- door section -->
+  <div id="door-section" class="open" onclick="mulai()">
+    <h1 class="h1-heading left huruf-sambung">Patrsiha Laviney</h1>
+    <h1 class="h1-heading right huruf-sambung">Sweet Seventeen</h1>
+    <div class="doors">
+      <div class="door left">
+        <img src="assets/img/door-left.png" alt="Left Door">
+      </div>
+      <div class="door right">
+        <img src="assets/img/door-right.png" alt="Right Door">
+      </div>
+    </div>
+  </div>
+
+  <!-- content section -->
+  <div id="content-section">
+    <!-- navbar -->
+    <ul class="nav">
+      <span class="nav-music"></span>
+      <li>
+        <a href="#acara-section">
+          <i class="fas fa-fw fa-calendar-day"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#lokasi-section">
+          <i class="fas fa-fw fa-location-dot"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-item-music rotate" id="musicButton" onclick="toggleMusic(event)">
+          <i class="fas fa-fw fa-compact-disc"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#gallery-section">
+          <i class="fas fa-fw fa-image"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#rsvp-section">
+          <i class="fas fa-fw fa-check-to-slot"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- hero section -->
+    <section id="hero-section" class="d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="my-2 text-white huruf-sambung">Patrisha Laviney <br> Sweet Seventeen</h1>
+
+        <h4 class="my-2 text-white fw-bold">Sunday, 1 December 2024</h4>
+        <br>
+        <a href="#pembuka-section" class="rounded-pill text-decoration-none btn btn-lg btn-get-started py-3"><i class="fas fa-fw fa-envelope-open-text"></i> Open Invitation</a>
+      </div>
+    </section>
+
+    <!-- pembuka section -->
+    <section id="pembuka-section" class="pembuka-section section-bg py-5">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h1 class="text-pink huruf-sambung fw-bold">Hello! 你好! Halo!</h1>
+              <p>Patrisha Laviney adalah seorang penulis muda yang dikenal karena gaya penulisannya yang unik dan penuh emosi. Karyanya sering mengangkat tema-tema kehidupan sehari-hari, dengan karakter-karakter yang sangat manusiawi dan relatable. Melalui tulisan-tulisannya, Patrisha berhasil membawa pembaca ke dalam dunia yang penuh dengan pertanyaan tentang makna hidup, hubungan, dan pencarian jati diri. Dengan sentuhan narasi yang mendalam, ia mampu menggugah perasaan pembaca dan memberikan refleksi yang kuat tentang kehidupan modern.</p>
+            </div>
+
+            <div class="row my-4 justify-content-center">
+              <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="assets/img/cacaw.jpg" alt="Patrisha" class="img-fluid rounded-pill">
+              </div>
+            </div>
+
+            <div class="row my-3 justify-content-between">
+              <div class="col rounded" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="p-2 pt-3 text-center">
+                  <h1 class="text-center huruf-sambung">Patrsiha Laviney</h1>
+                  <p>28 November 2007</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- acara section -->
+    <section id="acara-section" class="acara-section py-5">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h1 class="text-pink huruf-sambung fw-bold">Sweet Seventeen</h1>
+              <p>It is our greatest honor and joy to have you join us in this special celebration!<br> Your presence and blessings mean the world to us. Thank you!</p>
+            </div>
+            <div class="row justify-content-center px-3 text-center">
+              <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <h4>Akad Nikah</h4>
+                <hr>
+                <p><i class="fas fa-fw fa-calendar-day"></i> Sunday, 1 December 2024</p>
+                <p><i class="fas fa-fw fa-clock"></i> 09:00 WIB - Finish</p>
+                <p><i class="fas fa-fw fa-location-dot"></i> Location</p>
+                <a class="btn btn-lg btn-pink rounded-pill" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&details=Akad+Nikah+Nobita+dan+Shizuka&location=Salah+satu+hotel+di+Jakarta&dates=20240113T131200Z%2F20240113T131200Z" target="_blank"><i class="fas fa-fw fa-calendar-day"></i> Simpan ke Kalender</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi Section -->
+    <section id="lokasi-section" class="lokasi-section py-5 section-bg">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h1 class="text-pink huruf-sambung fw-bold">Party Location</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12 text-center">
+                <a class="btn btn-lg btn-pink mb-4 rounded-pill" href="https://maps.app.goo.gl/9L6smBCvNA62cuwYA" target="_blank"><i class="fas fa-fw fa-location-dot"></i> Open in Google Maps</a>
+                <iframe class="mb-4 mb-lg-0 border-pink" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126928.47075765251!2d106.67816164335936!3d-6.195612899999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f421963cd607%3A0x503cb9e9306e657a!2sHotel%20Indonesia%20Kempinski%20Jakarta!5e0!3m2!1sid!2sid!4v1704806502234!5m2!1sid!2sid" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section -->
+    <section id="gallery-section" class="gallery-section py-5 section-bg">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="section-title">
+          <h1 class="text-pink huruf-sambung fw-bold">Gallery</h1>
+        </div>
+
+        <div class="row" data-masonry='{"percentPosition": true }'>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/1.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/1.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/2.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/2.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/3.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/3.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/4.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/4.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/5.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/5.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/6.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/6.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/7.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/7.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/8.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/8.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <a href="assets/img/gallery/9.jpeg" data-lightbox="patrishaL" class="text-decoration-none">
+              <img src="assets/img/gallery/9.jpeg" alt="patrisha" class="card-img border-pink">
+            </a>
+          </div>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <iframe class="border-pink" width="100%" height="500" src="https://www.youtube.com/embed/JYDwTQC5TlE"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- RSVP Section -->
+<section id="rsvp-section" class="rsvp-section section-bg py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h1 class="text-pink huruf-sambung fw-bold">RSVP</h1>
+          <p>Fill out the form below to confirm your attendance.</p>
+        </div>
+        <form action="https://script.google.com/macros/s/AKfycbyIfjWG5EjQiyYk3R8n0MnmlJM6TcOYWuG4HvBaq3VpbINVZyMZvvNVjCDLffH61Aq7/exec" 
+              id="rsvp-form" 
+              method="POST" 
+              class="rsvp-form d-flex flex-column align-items-center">
+          <div class="mb-3 w-100">
+            <label for="nama" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nama" name="nama">
+          </div>
+          <div class="mb-3 w-100">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+          </div>
+          <div class="mb-3 w-100">
+            <label for="status" class="form-label">Status</label>
+            <select name="status" id="status" class="form-select">
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+          <div class="mt-3 w-100 text-center">
+            <button type="submit" class="btn btn-kirim w-100"><i class="fas fa-fw fa-paper-plane"></i> Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- footer -->
+    <footer id="footer" class="mb-5 pb-5">
+      <div class="container py-5 text-center position-relative">
+        <div class="row">
+          <div class="col-12 my-3">
+            <a href="#footer" target="_blank" class="text-decoration-none text-pink fw-bold">&copy; 2024. Made with ❤ by Willy</a>
+          </div>
+          <div class="col-12 my-3">
+            <a href="#" class="text-pink"><i class="fas fa-fw fa-arrow-up"></i> Back to top</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- lightbox2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- sweetalert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.all.min.js" integrity="sha256-iSkyJ41luwYhZX4JnDUop92wix0y8SBGAW5tCnnCfZ4=" crossorigin="anonymous"></script>
+  <!-- masonry -->
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <!-- js -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
